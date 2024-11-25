@@ -5,6 +5,7 @@ let ucetambolunenler,
   besyuzdenkucuksayilar,
   siralisayilar,
   tekraredensayilar;
+//
 
 // 3a
 let enbuyuk = -Infinity;
