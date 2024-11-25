@@ -1,27 +1,27 @@
 let ucetambolunenler,
-  enkucuk,
-  enbuyuk,
-  ucebolunenlerintoplami,
-  besyuzdenkucuksayilar,
-  siralisayilar,
-  tekraredensayilar;
+    enkucuk,
+    enbuyuk,
+    ucebolunenlerintoplami,
+    besyuzdenkucuksayilar,
+    siralisayilar,
+    tekraredensayilar;
 //
-
+// 
 // 3a
 let enbuyuk = -Infinity;
 let enkucuk = Infinity;
 
 for (let i = 0; i < sayilar.length; i++) {
-  if (sayilar[i] > enbuyuk) enbuyuk = sayilar[i];
-  if (sayilar[i] < enkucuk) enkucuk = sayilar[i];
+    if (sayilar[i] > enbuyuk) enbuyuk = sayilar[i];
+    if (sayilar[i] < enkucuk) enkucuk = sayilar[i];
 }
 
 // 3b
 let ucetambolunenler = [];
 sayilar.forEach(function(sayi) {
-  if (sayi % 3 === 0) {
-    ucetambolunenler.push(sayi);
-  }
+    if (sayi % 3 === 0) {
+        ucetambolunenler.push(sayi);
+    }
 });
 
 // 3c
@@ -38,13 +38,13 @@ let sayiSayaci = {};
 let tekraredensayilar = [];
 
 sayilar.forEach(function(sayi) {
-  sayiSayaci[sayi] = (sayiSayaci[sayi] || 0) + 1;
+    sayiSayaci[sayi] = (sayiSayaci[sayi] || 0) + 1;
 });
 
 for (let sayi in sayiSayaci) {
-  if (sayiSayaci[sayi] > 1) {
-    tekraredensayilar.push(`${sayi} sayısı ${sayiSayaci[sayi]} kere tekrar edilmiştir`);
-  }
+    if (sayiSayaci[sayi] > 1) {
+        tekraredensayilar.push(`${sayi} sayısı ${sayiSayaci[sayi]} kere tekrar edilmiştir`);
+    }
 }
 
 console.log("En büyük sayı:", enbuyuk);
